@@ -1,0 +1,41 @@
+{
+  "name": "meteor-react",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.0.0",
+    "antd": "^3.10.5",
+    "bcrypt": "^3.0.2",
+    "history": "^4.7.2",
+    "indexof": "0.0.1",
+    "meteor-node-stubs": "^0.4.1",
+    "numeral": "^2.0.6",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
+    "react-flip-move": "^3.0.3",
+    "react-meteor-data": "^0.2.11",
+    "react-router-dom": "^4.3.1"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.tsx",
+      "server": "server/main.ts"
+    },
+    "testModule": "tests/main.js"
+  },
+  "devDependencies": {
+    "@types/antd": "^1.0.0",
+    "@types/meteor": "^1.4.23",
+    "@types/node": "^10.12.5",
+    "@types/react": "^16.7.1",
+    "@types/react-dom": "^16.0.9",
+    "tslint": "^5.11.0",
+    "tslint-react": "^3.6.0",
+    "typescript": "^3.1.6"
+  }
+}
