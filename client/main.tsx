@@ -12,7 +12,7 @@ import NotFound from '../imports/ui/NotFound';
 import Login from '../imports/ui/Login';
 
 const browserHistory = createBrowserHistory();
-const unauthenticatedPages: any = ['/', '/singup'];
+const unauthenticatedPages: any = ['/', '/signup'];
 const authenticatedPages: any = ['/links'];
 const Root = (
   <Router history={browserHistory}>
